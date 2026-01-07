@@ -1,0 +1,49 @@
+Mulai
+
+Deklarasi:
+  array merk[5], model[5], warna[5]
+  array tahun[5], harga[5]
+  jumlah ← 0
+  pil ← 0
+
+Isi data awal mobil (3 data)
+jumlah ← 3
+
+Ulangi selama pil ≠ 4:
+  Tampilkan menu:
+    1. Lihat Mobil
+    2. Tambah Mobil
+    3. Cari Mobil
+    4. Keluar
+  Input pil
+
+  Jika pil = 1:
+    Tampilkan "Daftar Mobil"
+    Untuk i dari 0 sampai jumlah-1:
+      Tampilkan merk, model, warna, tahun, harga
+
+  Jika pil = 2:
+    Jika jumlah ≥ 5:
+      Tampilkan "Data penuh"
+    Jika tidak:
+      Input merk, model, warna, tahun, harga
+      jumlah ← jumlah + 1
+      Tampilkan "Berhasil ditambahkan"
+
+  Jika pil = 3:
+    Input maxHarga
+    ada ← false
+    Untuk i dari 0 sampai jumlah-1:
+      Jika harga[i] ≤ maxHarga:
+        Tampilkan mobil
+        ada ← true
+    Jika ada = false:
+      Tampilkan "Tidak ada"
+
+  Jika pil = 4:
+    Tampilkan "Terima kasih"
+
+  Jika selain 1–4:
+    Tampilkan "Pilihan salah"
+
+Selesai
