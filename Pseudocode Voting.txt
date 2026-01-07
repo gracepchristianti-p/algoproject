@@ -1,0 +1,32 @@
+Mulai
+
+Deklarasi:
+  array mobil[5]
+  array vote[5] ← 0
+  pilihan, menu
+
+Tampilkan "Voting Showroom Mobil"
+
+Ulangi selama menu ≠ 3:
+  Tampilkan menu:
+    1. Vote
+    2. Hasil
+    3. Keluar
+  Input menu
+
+  Jika menu = 1:
+    Tampilkan daftar mobil
+    Input pilihan
+    Jika pilihan antara 1 sampai 5:
+      vote[pilihan - 1] ← vote[pilihan - 1] + 1
+      Tampilkan "Vote berhasil"
+
+  Jika menu = 2:
+    Tampilkan hasil voting
+    Untuk i dari 0 sampai 4:
+      Tampilkan mobil[i] dan vote[i]
+
+Selesai perulangan
+
+Tampilkan "Terima kasih"
+Selesai
